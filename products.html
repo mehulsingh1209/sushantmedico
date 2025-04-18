@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse quality medical products at Sushant Medico - Your trusted pharmacy in Birgunj">
+    <title>Products - Sushant Medico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            Free delivery on orders above Rs 100 in Birgunj
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <i class="fas fa-clinic-medical" aria-hidden="true"></i>
+                <span>Sushant Medico</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-icon">
+                    <a href="cart.html" aria-label="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu" aria-expanded="false" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <div class="products-header">
+                <h1 class="section-title">Our Products</h1>
+                <div class="filters">
+                    <input type="text" id="searchInput" placeholder="Search products..." aria-label="Search products">
+                    <select id="categoryFilter" aria-label="Filter by category">
+                        <option value="">All Categories</option>
+                        <option value="medicines">Medicines</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="supplies">Medical Supplies</option>
+                        <option value="babycare">Baby Care</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Medicines Category -->
+                <div class="product-card" data-category="medicines">
+                    <img src="images/products/paracetamol.jpg" alt="Paracetamol 500mg tablets" loading="lazy">
+                    <div class="product-info">
+                        <h3>Paracetamol 500mg</h3>
+                        <p class="product-category">Medicines</p>
+                        <p class="product-desc">Pain reliever and fever reducer (10 tablets)</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 50</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="medicines">
+                    <img src="images/products/cetirizine.jpg" alt="Cetirizine tablets" loading="lazy">
+                    <div class="product-info">
+                        <h3>Cetirizine 10mg</h3>
+                        <p class="product-category">Medicines</p>
+                        <p class="product-desc">Antihistamine for allergies (10 tablets)</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 60</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="medicines">
+                    <img src="images/products/omeprazole.jpg" alt="Omeprazole capsules" loading="lazy">
+                    <div class="product-info">
+                        <h3>Omeprazole 20mg</h3>
+                        <p class="product-category">Medicines</p>
+                        <p class="product-desc">Acid reducer for heartburn (10 capsules)</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 80</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="medicines">
+                    <img src="images/products/amoxicillin.jpg" alt="Amoxicillin capsules" loading="lazy">
+                    <div class="product-info">
+                        <h3>Amoxicillin 500mg</h3>
+                        <p class="product-category">Medicines</p>
+                        <p class="product-desc">Antibiotic for bacterial infections (6 capsules)</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 120</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="medicines">
+                    <img src="images/products/ibuprofen.jpg" alt="Ibuprofen tablets" loading="lazy">
+                    <div class="product-info">
+                        <h3>Ibuprofen 400mg</h3>
+                        <p class="product-category">Medicines</p>
+                        <p class="product-desc">Anti-inflammatory pain reliever (10 tablets)</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 70</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Healthcare Category -->
+                <div class="product-card" data-category="healthcare">
+                    <img src="images/products/vitamin-c.jpg" alt="Vitamin C supplements" loading="lazy">
+                    <div class="product-info">
+                        <h3>Vitamin C 500mg</h3>
+                        <p class="product-category">Healthcare</p>
+                        <p class="product-desc">Immune system support (30 tablets)</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 200</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="healthcare">
+                    <img src="images/products/multivitamin.jpg" alt="Multivitamin tablets" loading="lazy">
+                    <div class="product-info">
+                        <h3>Multivitamin Tablet</h3>
+                        <p class="product-category">Healthcare</p>
+                        <p class="product-desc">Complete daily nutrition (30 tablets)</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 250</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="healthcare">
+                    <img src="images/products/protein-powder.jpg" alt="Protein powder" loading="lazy">
+                    <div class="product-info">
+                        <h3>Whey Protein 500g</h3>
+                        <p class="product-category">Healthcare</p>
+                        <p class="product-desc">Muscle building protein supplement</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 1,500</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="healthcare">
+                    <img src="images/products/digestive-enzyme.jpg" alt="Digestive enzymes" loading="lazy">
+                    <div class="product-info">
+                        <h3>Digestive Enzymes</h3>
+                        <p class="product-category">Healthcare</p>
+                        <p class="product-desc">Aids digestion and gut health (30 capsules)</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 300</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="healthcare">
+                    <img src="images/products/hand-sanitizer.jpg" alt="Hand sanitizer" loading="lazy">
+                    <div class="product-info">
+                        <h3>Hand Sanitizer 100ml</h3>
+                        <p class="product-category">Healthcare</p>
+                        <p class="product-desc">Alcohol-based sanitizer (70% ethanol)</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 100</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medical Supplies Category -->
+                <div class="product-card" data-category="supplies">
+                    <img src="images/products/bandage.jpg" alt="Medical bandages" loading="lazy">
+                    <div class="product-info">
+                        <h3>Surgical Bandage</h3>
+                        <p class="product-category">Medical Supplies</p>
+                        <p class="product-desc">Sterile wound dressing (5cm x 5m)</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 120</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="supplies">
+                    <img src="images/products/thermometer.jpg" alt="Digital thermometer" loading="lazy">
+                    <div class="product-info">
+                        <h3>Digital Thermometer</h3>
+                        <p class="product-category">Medical Supplies</p>
+                        <p class="product-desc">Fast and accurate temperature reading</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 400</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="supplies">
+                    <img src="images/products/face-mask.jpg" alt="Surgical face masks" loading="lazy">
+                    <div class="product-info">
+                        <h3>Surgical Masks (10pcs)</h3>
+                        <p class="product-category">Medical Supplies</p>
+                        <p class="product-desc">3-ply disposable face masks</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 150</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="supplies">
+                    <img src="images/products/gloves.jpg" alt="Medical gloves" loading="lazy">
+                    <div class="product-info">
+                        <h3>Disposable Gloves (100pcs)</h3>
+                        <p class="product-category">Medical Supplies</p>
+                        <p class="product-desc">Latex-free examination gloves</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 350</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="supplies">
+                    <img src="images/products/first-aid.jpg" alt="First aid kit" loading="lazy">
+                    <div class="product-info">
+                        <h3>First Aid Kit</h3>
+                        <p class="product-category">Medical Supplies</p>
+                        <p class="product-desc">Basic emergency medical supplies</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 800</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baby Care Category -->
+                <div class="product-card" data-category="babycare">
+                    <img src="images/products/baby-lotion.jpg" alt="Baby lotion" loading="lazy">
+                    <div class="product-info">
+                        <h3>Baby Lotion 200ml</h3>
+                        <p class="product-category">Baby Care</p>
+                        <p class="product-desc">Gentle moisturizer for baby skin</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 180</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="babycare">
+                    <img src="images/products/diapers.jpg" alt="Baby diapers" loading="lazy">
+                    <div class="product-info">
+                        <h3>Baby Diapers (M, 20pcs)</h3>
+                        <p class="product-category">Baby Care</p>
+                        <p class="product-desc">Super absorbent disposable diapers</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 450</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="babycare">
+                    <img src="images/products/baby-oil.jpg" alt="Baby oil" loading="lazy">
+                    <div class="product-info">
+                        <h3>Baby Oil 100ml</h3>
+                        <p class="product-category">Baby Care</p>
+                        <p class="product-desc">Mild oil for baby massage</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 150</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="babycare">
+                    <img src="images/products/baby-wipes.jpg" alt="Baby wipes" loading="lazy">
+                    <div class="product-info">
+                        <h3>Baby Wipes (80pcs)</h3>
+                        <p class="product-category">Baby Care</p>
+                        <p class="product-desc">Alcohol-free gentle cleansing wipes</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 220</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="babycare">
+                    <img src="images/products/baby-shampoo.jpg" alt="Baby shampoo" loading="lazy">
+                    <div class="product-info">
+                        <h3>Baby Shampoo 200ml</h3>
+                        <p class="product-category">Baby Care</p>
+                        <p class="product-desc">Tear-free formula for delicate hair</p>
+                        <div class="product-footer">
+                            <span class="price">Rs 200</span>
+                            <button class="btn add-to-cart" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Sushant Medico is your trusted pharmacy in Birgunj, providing quality medicines and healthcare products.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Birgunj, Nepal</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> +977 XXXXXXXXX</p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> info@sushantmedico.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Sushant Medico. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Cart Button -->
+    <a href="cart.html" class="mobile-cart" aria-label="Shopping Cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+            const isExpanded = mobileMenu.getAttribute('aria-expanded') === 'true';
+            mobileMenu.setAttribute('aria-expanded', !isExpanded);
+            navLinks.classList.toggle('active');
+        });
+
+        // Update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Product filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const categoryFilter = document.getElementById('categoryFilter');
+            const productCards = document.querySelectorAll('.product-card');
+
+            function filterProducts() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const selectedCategory = categoryFilter.value;
+
+                productCards.forEach(card => {
+                    const productName = card.querySelector('h3').textContent.toLowerCase();
+                    const productDesc = card.querySelector('.product-desc').textContent.toLowerCase();
+                    const productCategory = card.dataset.category;
+
+                    const matchesSearch = productName.includes(searchTerm) || productDesc.includes(searchTerm);
+                    const matchesCategory = !selectedCategory || productCategory === selectedCategory;
+
+                    if (matchesSearch && matchesCategory) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            searchInput.addEventListener('input', filterProducts);
+            categoryFilter.addEventListener('change', filterProducts);
+
+            // Add to cart functionality
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const countElement = document.querySelector('.cart-count');
+                    let count = parseInt(countElement.textContent) || 0;
+                    countElement.textContent = count + 1;
+                    
+                    // Here you would normally add the actual product to cart
+                    // For now we're just incrementing the counter
+                });
+            });
+        });
+    </script>
+</body>
+</html>

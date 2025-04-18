@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your shopping cart at Sushant Medico - Quality medicines and healthcare products in Birgunj">
+    <title>Shopping Cart - Sushant Medico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            Free delivery on orders above Rs 100 in Birgunj
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <i class="fas fa-clinic-medical" aria-hidden="true"></i>
+                <span>Sushant Medico</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-icon">
+                    <a href="cart.html" aria-label="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu" aria-expanded="false" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section-title">Shopping Cart</h1>
+            
+            <div class="cart-container">
+                <div id="cart-items" class="cart-items">
+                    <!-- Sample cart item (will be dynamically generated) -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="images/products/paracetamol.jpg" alt="Paracetamol 500mg" loading="lazy">
+                        </div>
+                        <div class="item-details">
+                            <h3>Paracetamol 500mg</h3>
+                            <p class="item-category">Medicines</p>
+                            <p class="item-price">Rs. 50</p>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn minus" aria-label="Decrease quantity">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input" aria-label="Quantity">
+                            <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
+                        </div>
+                        <div class="item-total">
+                            <span>Rs. 50</span>
+                        </div>
+                        <button class="item-remove" aria-label="Remove item">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="images/products/vitamin-c.jpg" alt="Vitamin C 500mg" loading="lazy">
+                        </div>
+                        <div class="item-details">
+                            <h3>Vitamin C 500mg</h3>
+                            <p class="item-category">Healthcare</p>
+                            <p class="item-price">Rs. 200</p>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn minus" aria-label="Decrease quantity">-</button>
+                            <input type="number" value="2" min="1" class="quantity-input" aria-label="Quantity">
+                            <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
+                        </div>
+                        <div class="item-total">
+                            <span>Rs. 400</span>
+                        </div>
+                        <button class="item-remove" aria-label="Remove item">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-item">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">Rs. 450</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Delivery:</span>
+                        <span id="delivery">Rs. 50</span>
+                    </div>
+                    <div class="summary-item discount">
+                        <span>Discount (5%):</span>
+                        <span id="discount">- Rs. 22.50</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total:</span>
+                        <span id="total">Rs. 477.50</span>
+                    </div>
+                    <div class="coupon-code">
+                        <input type="text" id="coupon" placeholder="Enter coupon code">
+                        <button class="btn btn-small">Apply</button>
+                    </div>
+                    <button class="btn btn-accent" onclick="proceedToCheckout()">Proceed to Checkout</button>
+                    <a href="products.html" class="continue-shopping">Continue Shopping</a>
+                </div>
+            </div>
+            
+            <div id="empty-cart" class="empty-cart hidden">
+                <i class="fas fa-shopping-cart"></i>
+                <h2>Your cart is empty</h2>
+                <p>Browse our products and add items to your cart</p>
+                <a href="products.html" class="btn">Continue Shopping</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Sushant Medico is your trusted pharmacy in Birgunj, providing quality medicines and healthcare products.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Birgunj, Nepal</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> +977 XXXXXXXXX</p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> info@sushantmedico.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Sushant Medico. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Cart Button -->
+    <a href="cart.html" class="mobile-cart" aria-label="Shopping Cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">2</span>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+            const isExpanded = mobileMenu.getAttribute('aria-expanded') === 'true';
+            mobileMenu.setAttribute('aria-expanded', !isExpanded);
+            navLinks.classList.toggle('active');
+        });
+
+        // Update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Quantity adjustment
+            document.querySelectorAll('.quantity-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.parentElement.querySelector('.quantity-input');
+                    let value = parseInt(input.value);
+                    
+                    if (this.classList.contains('minus') && value > 1) {
+                        input.value = value - 1;
+                    } else if (this.classList.contains('plus')) {
+                        input.value = value + 1;
+                    }
+                    
+                    updateCartTotals();
+                });
+            });
+
+            // Quantity input change
+            document.querySelectorAll('.quantity-input').forEach(input => {
+                input.addEventListener('change', function() {
+                    if (this.value < 1) this.value = 1;
+                    updateCartTotals();
+                });
+            });
+
+            // Remove item
+            document.querySelectorAll('.item-remove').forEach(button => {
+                button.addEventListener('click', function() {
+                    this.closest('.cart-item').remove();
+                    updateCartTotals();
+                });
+            });
+
+            // Update cart totals
+            function updateCartTotals() {
+                let subtotal = 0;
+                document.querySelectorAll('.cart-item').forEach(item => {
+                    const price = parseFloat(item.querySelector('.item-price').textContent.replace('Rs. ', ''));
+                    const quantity = parseInt(item.querySelector('.quantity-input').value);
+                    const total = price * quantity;
+                    
+                    item.querySelector('.item-total span').textContent = 'Rs. ' + total.toFixed(2);
+                    subtotal += total;
+                });
+
+                const delivery = subtotal >= 100 ? 0 : 50;
+                const discount = subtotal * 0.05; // 5% discount
+                const total = subtotal + delivery - discount;
+
+                document.getElementById('subtotal').textContent = 'Rs. ' + subtotal.toFixed(2);
+                document.getElementById('delivery').textContent = 'Rs. ' + delivery.toFixed(2);
+                document.getElementById('discount').textContent = '- Rs. ' + discount.toFixed(2);
+                document.getElementById('total').textContent = 'Rs. ' + total.toFixed(2);
+
+                // Update cart count in header
+                const itemCount = document.querySelectorAll('.cart-item').length;
+                document.querySelectorAll('.cart-count').forEach(el => {
+                    el.textContent = itemCount;
+                });
+
+                // Show empty cart message if no items
+                if (itemCount === 0) {
+                    document.getElementById('cart-items').classList.add('hidden');
+                    document.getElementById('empty-cart').classList.remove('hidden');
+                    document.querySelector('.cart-summary').classList.add('hidden');
+                } else {
+                    document.getElementById('cart-items').classList.remove('hidden');
+                    document.getElementById('empty-cart').classList.add('hidden');
+                    document.querySelector('.cart-summary').classList.remove('hidden');
+                }
+            }
+
+            // Initial calculation
+            updateCartTotals();
+        });
+
+        function proceedToCheckout() {
+            // In a real implementation, this would redirect to checkout page
+            alert('Proceeding to checkout! This would redirect to payment page in a real implementation.');
+        }
+    </script>
+</body>
+</html>

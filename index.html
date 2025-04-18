@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sushant Medico - Your trusted pharmacy in Birgunj for quality medicines and healthcare products">
+    <title>Sushant Medico - Your Trusted Medical Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            Free delivery on orders above Rs 100 in Birgunj
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <i class="fas fa-clinic-medical" aria-hidden="true"></i>
+                <span>Sushant Medico</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-icon">
+                    <a href="cart.html" aria-label="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu" aria-expanded="false" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section">
+            <div class="container two-column">
+                <div class="column">
+                    <h1>Your Health, Our Priority</h1>
+                    <p class="mb-2">Get all your medical needs delivered at your doorstep in Birgunj. Quality medicines, trusted service.</p>
+                    <a href="products.html" class="btn">Shop Now</a>
+                </div>
+                <div class="column">
+                    <img src="images/hero/pharmacy-front.jpg" alt="Sushant Medico store front with medicines on display" class="hero-image" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Popular Categories</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="images/categories/medicines.jpg" alt="Various medicines on display" class="category-image" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Medicines</h3>
+                            <p class="card-text">Prescription and over-the-counter medicines</p>
+                            <a href="products.html?category=medicines" class="btn">Browse</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/categories/healthcare.jpg" alt="Healthcare products including vitamins and supplements" class="category-image" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Healthcare</h3>
+                            <p class="card-text">Personal care and wellness products</p>
+                            <a href="products.html?category=healthcare" class="btn">Browse</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/categories/medical-supplies.jpg" alt="Medical equipment and supplies" class="category-image" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Medical Supplies</h3>
+                            <p class="card-text">Medical equipment and supplies</p>
+                            <a href="products.html?category=supplies" class="btn">Browse</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/categories/baby-care.jpg" alt="Baby care products including diapers and lotions" class="category-image" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Baby Care</h3>
+                            <p class="card-text">Products for baby health and care</p>
+                            <a href="products.html?category=babycare" class="btn">Browse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Why Choose Us</h2>
+                <div class="grid">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-truck-fast fa-3x mb-2" aria-hidden="true"></i>
+                            <h3 class="card-title">Fast Delivery</h3>
+                            <p class="card-text">Quick delivery within Birgunj</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-certificate fa-3x mb-2" aria-hidden="true"></i>
+                            <h3 class="card-title">Genuine Products</h3>
+                            <p class="card-text">100% authentic medicines</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-headset fa-3x mb-2" aria-hidden="true"></i>
+                            <h3 class="card-title">24/7 Support</h3>
+                            <p class="card-text">Always here to help you</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-doctor fa-3x mb-2" aria-hidden="true"></i>
+                            <h3 class="card-title">Doctor Consultation</h3>
+                            <p class="card-text">Book appointments with trusted doctors</p>
+                            <a href="#doctor-appointment" class="btn btn-secondary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctor Appointment Section -->
+        <section id="doctor-appointment" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Book a Doctor Appointment</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <h3>Consult with Our Trusted Doctors</h3>
+                        <p>We partner with qualified medical professionals to provide you with the best healthcare services. Book an appointment for in-person or online consultation.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Experienced specialists</li>
+                            <li><i class="fas fa-check-circle"></i> Flexible timings</li>
+                            <li><i class="fas fa-check-circle"></i> Online or in-clinic visits</li>
+                            <li><i class="fas fa-check-circle"></i> Follow-up care</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <form class="appointment-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="doctor">Preferred Doctor</label>
+                                <select id="doctor" name="doctor">
+                                    <option value="">Any Available Doctor</option>
+                                    <option value="dr-sharma">Dr. Anil Sharma (General Physician)</option>
+                                    <option value="dr-khan">Dr. Sameer Khan (Pediatrician)</option>
+                                    <option value="dr-gurung">Dr. Priya Gurung (Gynecologist)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="notes">Notes (Optional)</label>
+                                <textarea id="notes" name="notes" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Sushant Medico is your trusted pharmacy in Birgunj, providing quality medicines and healthcare products.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Birgunj, Nepal</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> +977 XXXXXXXXX</p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> info@sushantmedico.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Sushant Medico. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Cart Button -->
+    <a href="cart.html" class="mobile-cart" aria-label="Shopping Cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+            const isExpanded = mobileMenu.getAttribute('aria-expanded') === 'true';
+            mobileMenu.setAttribute('aria-expanded', !isExpanded);
+            navLinks.classList.toggle('active');
+        });
+
+        // Update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Lazy loading for images
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.src = img.dataset.src;
+            });
+        }
+
+        // Doctor appointment form handling
+        const appointmentForm = document.querySelector('.appointment-form');
+        if (appointmentForm) {
+            appointmentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Here you would typically send the form data to your server
+                alert('Appointment request received! We will contact you shortly to confirm.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
